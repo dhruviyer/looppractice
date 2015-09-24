@@ -7,7 +7,8 @@ public class LoopPractice {
 		// method17();
 		// method18();
 		// method19();
-		method20();
+		//method20();
+		method21();
 	}
 
 	public static void method16() {
@@ -60,5 +61,11 @@ public class LoopPractice {
 			if (i % 2 == 1)
 				System.out.println(i);
 
+	}
+
+	public static void method21(){
+		for(int i = 300; i>=3; i--)
+			if(i%3 ==0)
+				System.out.println(i);
 	}
 }

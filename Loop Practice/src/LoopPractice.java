@@ -6,7 +6,7 @@ public class LoopPractice {
 		//method16();
 		//method17();
 		//method18();
-	
+		method19();
 	}
 	
 	public static void method16(){
@@ -41,5 +41,15 @@ public class LoopPractice {
 		JOptionPane.showMessageDialog(null, enteredValues);
 	}
 	
-	public static void
+	public static void method19(){
+		final int SENTINAL = 0;
+		int product = 1;
+		int val = Integer.parseInt(JOptionPane.showInputDialog("Please enter a value: "));
+		
+		while(val != SENTINAL){
+			product = product*val;
+			val = Integer.parseInt(JOptionPane.showInputDialog("Please enter another value: "));
+		}
+		JOptionPane.showMessageDialog(null, "The product is: "+product);
+	}
 }

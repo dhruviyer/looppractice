@@ -4,7 +4,9 @@ public class LoopPractice {
 	
 	public static void main(String[] args){
 		//method16();
-		method17();
+		//method17();
+		//method18();
+	
 	}
 	
 	public static void method16(){
@@ -17,6 +19,7 @@ public class LoopPractice {
 	}
 	
 	public static void method17(){
+
 		int input = 0; 
 		
 		do{
@@ -25,4 +28,18 @@ public class LoopPractice {
 		
 		JOptionPane.showMessageDialog(null, "Thanks!");
 	}
+
+	public static void method18(){
+		final int SENTINAL = 16;
+		String enteredValues = "Values Entered:\n";
+		int val = Integer.parseInt(JOptionPane.showInputDialog("Please enter a value: "));
+		
+		while(val != SENTINAL){
+			enteredValues = enteredValues + val + "\n";
+			val = Integer.parseInt(JOptionPane.showInputDialog("Please enter another value: "));
+		}
+		JOptionPane.showMessageDialog(null, enteredValues);
+	}
+	
+	public static void
 }
